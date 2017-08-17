@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    tools:context="com.mrsolkin.millionaire.MainActivity">
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Как называются линзы, которые люди надевают, чтобы лучше видеть?"/>
+
+    <Button
+        android:id="@+id/answerA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/answerB"
+        tools:text="дружелюбные"/>
+
+    <Button
+        android:id="@+id/answerB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/answerC"
+        tools:text="контактные"/>
+
+    <Button
+        android:id="@+id/answerC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/answerD"
+        tools:text="общительные"/>
+
+    <Button
+        android:id="@+id/answerD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        tools:text="коммуникабельные"/>
+
+    <TextView
+        android:id="@+id/correctAnswersCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/answerA"
+        android:textAlignment="center"
+        tools:text="Правильных ответов: 0"/>
+
+
+</RelativeLayout>
